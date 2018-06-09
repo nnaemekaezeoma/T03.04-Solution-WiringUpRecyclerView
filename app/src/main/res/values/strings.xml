@@ -15,4 +15,5 @@
 -->
 <resources>
     <string name="app_name">RecyclerView</string>
+    <string name="Test">TestText</string>
 </resources>

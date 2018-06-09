@@ -39,12 +39,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // COMPLETED (4) Use findViewById to store a reference to the RecyclerView in mNumbersList
-        /*
-         * Using findViewById, we get a reference to our RecyclerView from xml. This allows us to
-         * do things like set the adapter of the RecyclerView and toggle the visibility.
-         */
+
         mNumbersList = (RecyclerView) findViewById(R.id.rv_numbers);
+
+        // COMPLETED (5) Create a LinearLayoutManager variable called layoutManager
+        /*
+         * A LinearLayoutManager is responsible for measuring and positioning item views within a
+         * RecyclerView into a linear list. This means that it can produce either a horizontal or
+         * vertical list depending on which parameter you pass in to the LinearLayoutManager
+         * constructor. By default, if you don't specify an orientation, you get a vertical list.
+         * In our case, we want a vertical list, so we don't need to pass in an orientation flag to
+         * the LinearLayoutManager constructor.
+         *
+         * There are other LayoutManagers available to display your data in uniform grids,
+         * staggered grids, and more! See the developer documentation for more details.
+         */
 
         // COMPLETED (5) Create a LinearLayoutManager variable called layoutManager
         /*
