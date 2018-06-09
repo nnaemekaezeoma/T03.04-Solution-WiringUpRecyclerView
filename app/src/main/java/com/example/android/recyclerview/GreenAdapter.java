@@ -130,6 +130,7 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
          */
         void bind(int listIndex) {
             listItemNumberView.setText(String.valueOf(listIndex));
+            Log.i("Test ", "This is a test");
         }
     }
 }
